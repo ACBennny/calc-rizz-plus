@@ -94,8 +94,8 @@ Let's take a look into the function process of this calculator.
     
       Grade 4
       1. Subtraction only works if the first operand is greater than/equals to the second operand.
-      i.e. operand1 >= operand2
-      2. If above condition is not met, an error message is displayed.
+         i.e. operand1 >= operand2
+      2. If the above condition is not met, an error message is displayed.
 
       Grade 5 and 6
       1. Subtraction works normally for both grades.
