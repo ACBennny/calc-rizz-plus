@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*************************************************************************
+ * This is the Style of the claculator
+ * Contained in this document are all the styles implemented in the calculators design
+ *
+ * @author (Anyanwu Bendict Chukwuemeka)
+ * @version (version One[1])
+ ************************************************************************/
+
+
+
+/* ------ root ----- */
+.main
+{
+    -fx-pref-width: 900px;
+    -fx-pref-height: 600px;
+    -fx-min-width: 400px;
+    -fx-min-height: 600px;
+    -fx-background-image: url(../images/rootBcg.jpg);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-aligment: center;
+}
+
+
+/* ---- For top, left, right and bottom --- */
+/* -- Creates space to see background pic -- */
+
+.empty_bdr_v
+{
+    -fx-pref-width: 400px;
+    -fx-pref-height: 25px;
+}
+
+.empty_bdr_h
+{
+    -fx-pref-width: 25px;
+    -fx-pref-height: 550px;
+}
+
+
+/* ------ Calculator Base ------ */
+.base
+{
+    -fx-pref-width: 350px;
+    -fx-pref-height: 550px;
+    -fx-max-width: 350px;
+    -fx-max-height: 550px;
+    -fx-min-width: 350px;
+    -fx-min-height: 550px;
+    -fx-background-color: #000000;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 25px;
+    -fx-effect: dropshadow(three-pass-box,#000000b9, 10px, 0, 15px, 20px);
+}
+
+.base_ctnt
+{
+    -fx-spacing: 15px;
+}
+
+
+
+/* ---- Top Panel ---- */
+
+.top_panel
+{
+    -fx-padding: 5px 15px;
+    -fx-spacing: 10px;
+}
+
+
+/* ----- Branding ------- */
+
+.brand_box
+{
+    -fx-spacing: 10px;
+}
+
+/* ------ Brand logo/image ------ */
+.brand_section .brand_logo
+{
+    -fx-pref-width: 110px;
+    -fx-pref-height: 100px;
+    -fx-min-width: 110px;
+    -fx-min-height: 100px;
+    -fx-max-width: 110px;
+    -fx-max-height: 100px;
+    -fx-background-image: url(../images/calcRizzLogo.gif);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+/* ----- Calculator Name ----- */
+.brand_info .brand_Main_name
+{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 30px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #ffffff;
+}
+
+
+/* ------- Calculator Version ------- */
+.brand_info .brand_Main_version
+{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-style: italic;
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #dfdfdf;
+}
+
+/* ------ Author name -------- */
+.brand_info .brand_author_name,
+.brand_info .brand_author_idNo
+{
+    -fx-font-family: 'Ubuntu', sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #b6a4bb;
+}
+
+
+
+
+/* ---- Display box ---- */
+/* ---- Will display all operatiions ---- */
+
+.display_box
+{
+    -fx-min-width: 300px;
+    -fx-min-height: 100px;
+    -fx-background-color: #85d7a6;
+    -fx-background-radius: 15px;
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box,#000000b9, 15px, 0, 0, 0);
+}
+
+.display_box Label
+{
+    -fx-min-width: 300px;
+    -fx-font-family: 'Orbitron', sans-serif;
+    -fx-font-size: 18px;
+}
+
+.display_box .display_field
+{
+    -fx-text-fill: #0d13c9;
+    -fx-alignment: center-right;
+}
+
+/* --- Error Message --- */
+.display_box .display_warning
+{
+    -fx-text-fill: #ce2626;
+    -fx-alignment: center;
+}
+
+
+/* -===== BOTTOM PANEL ======- */
+
+.bottom_panel
+{   
+    -fx-padding: 5px 15px;
+    -fx-spacing: 10px;
+}
+
+/* ===== Grade Buttons ===== */
+
+.gradeClass
+{
+    -fx-spacing: 10px;
+}
+
+.gradeClass .gradeTitle
+{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 15px;
+}
+
+.gradeClass .gradeTypeBox
+{
+    -fx-spacing: 10px;
+}
+
+.gradeTypeBox .gradeRad
+{
+    -fx-text-fill: #ecebec;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+
+
+/* ==== Operand Buttons box ===== */
+
+.operand_btnBox
+{
+    -fx-min-width: 300px;
+    -fx-min-height: 250px;
+    -fx-vgap: 10px;
+    -fx-hgap: 10px;
+    -fx-padding: 10px;
+}
+
+
+/* ---- operand buttons --- */
+.operand_btnBox .operand_btn
+{
+    -fx-pref-width: 65px;
+    -fx-pref-height: 50px;
+    -fx-max-width: 65px;
+    -fx-max-height: 50px;
+    -fx-min-width: 65px;
+    -fx-min-height: 50px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #323232;
+    -fx-effect: dropshadow(three-pass-box,#000000b9, 5px, 0, 1px, 8px);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
+}
+
+/* ----- Equals to button ------- */
+.operand_btnBox .submit_btn
+{
+    -fx-pref-width: 65px;
+    -fx-pref-height: 50px;
+    -fx-max-width: 65px;
+    -fx-max-height: 50px;
+    -fx-min-width: 65px;
+    -fx-min-height: 50px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #eb5b07;
+    -fx-effect: dropshadow(three-pass-box,#000000b9, 5px, 0, 1px, 8px);
+    -fx-text-fill: #fff;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
+    -fx-cursor: hand;
+}
+
+/* --- hover effect for operand button --- */
+.operand_btnBox .operand_btn:hover
+{
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+
+/* --- hover effect for equals to button --- */
+
+.operand_btnBox .submit_btn:hover
+{
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
